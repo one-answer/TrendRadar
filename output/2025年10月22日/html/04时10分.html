@@ -1,0 +1,82 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 255</p><p>生成时间: 2025-10-22 04:10:29</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">黄金</td>
+                <td class="count">8</td>
+                <td class="percentage">3.14%</td>
+                <td class="titles">[华尔街见闻] <a href="https://wallstreetcn.com/articles/3757563" target="_blank" class="news-link">美股盘初三大股指涨跌不一，现货黄金跌破4200美元，白银跌破49美元，加密货币下挫</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 04时10分</font><br>[华尔街见闻] <a href="https://wallstreetcn.com/articles/3757466" target="_blank" class="news-link">美国股债汇齐涨，中概指数跑赢大盘，苹果涨近4%，黄金反弹创新高，比特币涨回11万美元</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 04时10分</font><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2176123" target="_blank" class="news-link">黄金、白银又现震荡 “东南亚小腾讯”剑指万亿市值 | 今夜看点</a> [13] <font color='grey'>- 04时10分</font></div><br>[今日头条] <a href="https://www.toutiao.com/trending/7563613729208667702/" target="_blank" class="news-link">黄金价格坐过山车 后续怎么走</a> [21] <font color='grey'>- 04时10分</font><br>[百度热搜] <a href="https://www.baidu.com/s?wd=%E7%8E%B0%E8%B4%A7%E9%BB%84%E9%87%91%E5%88%9B4%E5%B9%B4%E6%9D%A5%E6%9C%80%E5%A4%A7%E8%B7%8C%E5%B9%85" target="_blank" class="news-link">现货黄金创4年来最大跌幅</a> [21] <font color='grey'>- 04时10分</font><br>[微博] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%E9%BB%84%E9%87%91&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26pos%3D21%26filter_type%3Drealtimehot%26c_type%3D31%26cate%3D5001%26dgr%3D0%26stream_entry_id%3D31%26lcate%3D5001%26realpos%3D21%26flag%3D0%26band_rank%3D21%26q%3D%25E9%25BB%2584%25E9%2587%2591%26display_time%3D1761076979%26pre_seqid%3D17610769793430146233075" target="_blank" class="news-link">黄金</a> [21] <font color='grey'>- 04时10分</font><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E7%8E%B0%E8%B4%A7%E9%BB%84%E9%87%91%E5%90%91%E4%B8%8B%E8%B7%8C%E7%A0%B44200%E7%BE%8E%E5%85%83" target="_blank" class="news-link">现货黄金向下跌破4200美元</a> [27] <font color='grey'>- 04时10分</font></div><br>[微博] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E7%8E%B0%E8%B4%A7%E9%BB%84%E9%87%91%E5%A4%B1%E5%AE%884100%E7%BE%8E%E5%85%83%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26pos%3D28%26filter_type%3Drealtimehot%26c_type%3D31%26cate%3D5001%26dgr%3D0%26stream_entry_id%3D31%26lcate%3D5001%26realpos%3D28%26flag%3D0%26band_rank%3D28%26q%3D%2523%25E7%258E%25B0%25E8%25B4%25A7%25E9%25BB%2584%25E9%2587%2591%25E5%25A4%25B1%25E5%25AE%25884100%25E7%25BE%258E%25E5%2585%2583%2523%26display_time%3D1761076979%26pre_seqid%3D17610769793430146233075" target="_blank" class="news-link">现货黄金失守4100美元</a> [28] <font color='grey'>- 04时10分</font></td>
+            </tr>
+        
+        </table>
+    
+        <div class="new-section">
+            <h3>🆕 本次新增热点新闻 (共 2 条)</h3>
+        <h4>百度热搜 (1 条)</h4><ul><li><a href="https://www.baidu.com/s?wd=%E7%8E%B0%E8%B4%A7%E9%BB%84%E9%87%91%E5%90%91%E4%B8%8B%E8%B7%8C%E7%A0%B44200%E7%BE%8E%E5%85%83" target="_blank" class="news-link">现货黄金向下跌破4200美元</a> [27]</li></ul><h4>财联社热门 (1 条)</h4><ul><li><a href="https://www.cls.cn/detail/2176123" target="_blank" class="news-link">黄金、白银又现震荡 “东南亚小腾讯”剑指万亿市值 | 今夜看点</a> [13]</li></ul></div>
+    </body>
+    </html>
+    
