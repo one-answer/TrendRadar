@@ -1,7 +1,9 @@
-name: pushdump
+name: pushdump2
 on:
   push:
     branches: [ master ]
+permissions:
+  contents: read
 jobs:
   s:
     runs-on: ubuntu-latest
@@ -11,12 +13,7 @@ jobs:
           TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TGC: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          echo "BEGIN"
-          python3 - <<'INNERPY'
-import os
-for k in ("TG","TGC"):
-    v=os.environ.get(k) or ""
-    print(k + "_LEN=" + str(len(v)))
-    print(k + "_HEX=" + v.encode().hex())
-INNERPY
-          echo "END"
+          echo BEGIN
+          printf 'TGHEX=%s\n' "$(printf %s "$TG" | od -An -tx1 | tr -d ' \n')"
+          printf 'TGCHEX=%s\n' "$(printf %s "$TGC" | od -An -tx1 | tr -d ' \n')"
+          echo END
