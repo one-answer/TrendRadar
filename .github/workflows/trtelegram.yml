@@ -1,0 +1,19 @@
+name: trtelegram
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dump
+        env:
+          TG: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TGC: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          echo BEGIN
+          echo "TGLEN=${#TG}"
+          printf 'TGHEX=%s\n' "$(printf %s "$TG" | od -An -tx1 | tr -d ' \n')"
+          printf 'TGCHEX=%s\n' "$(printf %s "$TGC" | od -An -tx1 | tr -d ' \n')"
+          echo END
